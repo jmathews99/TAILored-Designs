@@ -1,0 +1,50 @@
+
+#navbar{
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+}
+#navbar a{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+#navbar a:hover {
+  background-color: #a2c1e2;
+  color:
+}
+#navbar a.active{
+  color:  white;
+  background-color: #303351;
+}
+#navbar a:hover:not.active {
+  background-color: #a2c1e2;
+}
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.grid-container {
+  display: grid;
+  gap: 40px;
+  padding: 20px;
+}
+
+.home-item{
+  background-color: #f4e1cc;
+  text-align: center;
+  padding: 40px;
+  font-size: 30px;
+}
+
+.item1{
+  grid-column: 1/ span 2;
+  grid-row: 1/ span 2;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<meta>
+<link rel="stylesheet" href="style.css">
+</meta>
+<head>
+</head>
+<body>
+  <div id="navbar">
+    <a class="active" href="javascript:void(0)">HOME</a>
+    <a href="javascript:void(0)">ADOPT</a>
+    <a href="javascript:void(0)">FIND</a>
+    <a href="javascript:void(0)">LEARN</a>
+    <a href="javascript:void(0)">ABOUT</a>
+  </div>
+
+<div class="grid-container">
+  <div class="home-item 1">1</div>
+  <div class="home-item 2">2</div>
+  <div class="home-item 3">3</div>
+  <div class="home-item 4">4</div>
+  <div class="home-item 5">5</div>
+  <div class="home-item 6">6</div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+<footer>
+</footer>
